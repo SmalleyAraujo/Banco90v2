@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco90v2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <!-- class="container-fluid substituindo o div pagina -->
+        <header>
+
+            <nav class="navbar navbar-expand-sm bg-dark py-3">
+                <!-- Você é o navbar navbar smoll pequeno bg-dark backgraund , py  padding eixo y vertical top and bottom->
+                    <!--  align-items eixo y x justify-items eixo x.-->
+                
+                
+                <!-- parte do header direita -->
+                <div class="container">
+                    <ul class="navbar-nav">                    
+                        <li class="navbar-item"><img src="images/logoWhite.svg" alt=""></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-warning">Home</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Ajuda</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Empréstimo</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-white">Conta</a></li>                                      
+                    </ul>
+                    <!-- parte do header esquerda -->
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"><button class="btn btn-outline-light">Abra a sua conta</button></li>
+                        <!--< outra forma button class="btn btn-outline border-white text-white"  -->
+                    </ul>
+                </div>                
+            </nav>            
+        </header>
+        <main>      
+
+            <!-- BANNER V1 -->
+           <!-- <div id="banner" class="container-fluid my-4 p-0 d-flex align-items-center" >
+                <div class="container m-0 p-0" style="width: 40%; height: 40%; background-color: darkorange;"></div>
+
+           </div> -->
+           <!-- my vai até 0 5 -->
+
+           <!-- CARROSEL -->
+           <div class="carousel slide" id="demo" data-bs-ride="carousel">
+                <!-- SLIDER -->
+                <div class="carousel-inner" style="height: 500px; overflow: hidden;">
+                    <!--overflow: hidden; tudo que estourar esconde  -->
+                    <div class="carousel-item active">
+                        <img src="images/banner.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner2.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner3.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <!-- o carrosel funciona como array começando a contar do zero, o active é para definir o primeiro que vai rodar-->
+                </div>
+                <!-- CONTROLADORES -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+           </div>
+                
+           
+            
+
+        </main>
+        <footer></footer>
+
+
+
+
+    </div>
+
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> 
+</body>
+</html>
