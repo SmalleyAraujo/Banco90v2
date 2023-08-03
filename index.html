@@ -31,11 +31,48 @@
                     </ul>
                     <!-- parte do header esquerda -->
                     <ul class="navbar-nav">
-                        <li class="navbar-item"><button class="btn btn-outline-light">Abra a sua conta</button></li>
+                        <li class="navbar-item"><button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#popUpMensagem">Abra a sua conta</button></li>
                         <!--< outra forma button class="btn btn-outline border-white text-white"  -->
                     </ul>
                 </div>                
-            </nav>            
+            </nav>
+            <!-- MODAL -->
+            <div class="modal" id="popUpMensagem">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-center">
+                            <h1 class="modal-title">ABRIR A SUA CONTA</h1>
+                        </div>
+                        <div class="modal-body">
+                            <!-- FORMULARIO -->
+                            <form action="#" method="post">
+                                <div class="form-group my-2">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" class="form-control" placeholder="Digite o seu nome">
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="" class="form-control" placeholder="Digite o seu email">
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" id="senha" class="form-control" placeholder="Digite sua senha">
+                                </div>
+                                <div class="form-group my-2">
+                                    <label for="senha">Repetir senha</label>
+                                    <input type="password" id="senha" class="form-control" placeholder="Digite novamente sua senha ">
+                                </div>
+                                <div class="form-group d-flex justify-content-center my-3">
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                </div>                                
+                            </form>                                
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </header>
         <main>      
 
@@ -47,7 +84,7 @@
            <!-- my vai até 0 5 -->
 
            <!-- CARROSEL -->
-           <div class="carousel slide" id="demo" data-bs-ride="carousel">
+           <div class="carousel slide my-2" id="demo" data-bs-ride="carousel">
                 <!-- SLIDER -->
                 <div class="carousel-inner" style="height: 500px; overflow: hidden;">
                     <!--overflow: hidden; tudo que estourar esconde  -->
@@ -68,8 +105,104 @@
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
+                <!-- CONTROLADORES SETAS -->
+                <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
            </div>
-                
+            <!-- O modal é como um popUp  -->
+            <!-- SEÇÃO PAGAMENTO -->
+            <div class="container">
+                <div class="row my-3 justify-content-center">
+                    <!-- md faz a média no col-->
+                    <div class="col-md-3">                    
+                        <div class="card">
+                            <img src="images/codigoDeBarras.svg" style="width: 60%;" class="mx-auto card.img" alt="">
+                            <div class="card-body text-center">
+                                <h1 class="card-title">BOLETO</h1>
+                                <p class="card-text">Boleto Flash, processo em 24h!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">                    
+                        <div class="card">
+                            <img src="images/CartaoDeCredito.svg" style="width: 60%;" class="mx-auto card.img" alt="">
+                            <div class="card-body text-center">
+                                <h1 class="card-title">CARTÃO</h1>
+                                <p class="card-text">Parcelamento em 12x sem juros!</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3">                    
+                        <div class="card">
+                            <img src="images/Dinheiro.svg" style="width: 60%;" class="mx-auto card.img" alt="">
+                            <div class="card-body text-center">
+                                <h1 class="card-title">DINHEIRO</h1>
+                                <p class="card-text">15% off em pagamento a vista!</p>
+                            </div>
+                        </div>
+                    </div>                       
+                    
+                </div>
+            </div>
+
+            <!-- SEÇÃO TABELA -->
+            <div class="container">
+                <table class="table table-dark table-striped table-hover table-bordered border-light" style="box-shadow: 5px 10px 20px green;">
+                    <!--class="table table-dark table-striped-columns "  -->
+                    <tr>
+                        <!-- class="border border-light" -->
+                        <th></th>
+                        <th>SEGUNDA</th>
+                        <th>TERÇA</th>
+                        <th>QUARTA</th>
+                        <th>QUINTA</th>
+                        <th>SEXTA</th>
+                    </tr>
+                    <tr>
+                        <th>Marcelo</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>Daniela</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr><tr>
+                        <th>João</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row bg-dark py-3">
+                    <div class="col-6 text-white py-5">
+                        <h3 class="mx-3">Contrate nossos serviços</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti atque ut accusamus in maiores dignissimos ipsum ducimus dolor ab. Ex pariatur quis culpa magnam rem sed a nisi non veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum sit eveniet error commodi nostrum minima fuga fugiat repellat inventore eum itaque cumque sequi nihil, provident magni dolor similique recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quod commodi consectetur quaerat ducimus fugit minus corrupti, officia vero unde ipsum sed, at doloribus eos cumque magni temporibus ratione eaque?</p>
+                    </div>
+                    <div class="col-6 p-0">
+                       <img src="images/bannerBeneficios.jpg" alt="" width="100%" style="border-radius: 10px;">
+                    </div>
+
+
+                </div>
+
+            </div>
            
             
 
