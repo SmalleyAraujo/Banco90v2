@@ -5,3 +5,12 @@
     background-position: top;    
 }
 
+.carousel-control-prev-icon{
+    display: none;
+
+}
+
+.icone2{
+    background-image: url(../images/arrow_back_ios.svg);
+    display: block;
+}
